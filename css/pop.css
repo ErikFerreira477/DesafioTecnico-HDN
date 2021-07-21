@@ -1,0 +1,97 @@
+/* Import da fonte customizada do google */
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/* características da janela pop-up */
+#pop{
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    right: 25%;
+    background-color: rgb(255, 174, 0);
+    border: 4px solid black;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+} 
+/* Estilo de quando o pop-up aparece */
+#pop.active{
+    display: block;
+    -webkit-animation: pop 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: pop 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* Estilo de quando o pop-up aparece (ANIMAÇÃO) */
+@-webkit-keyframes pop {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes pop {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+/* caracteristicas do botao de fechar o pop-up */
+#popClose{
+    float: right;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 25px;
+    margin-right: 5px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+/* Estilo do botão X do pop-up */
+#popClose:hover{
+    background-color: #FF4949;
+    color: white;
+}
+/* Estilo dos textos tamanho h2 presentes no pop-up */
+h2{
+    padding-left: 50px;
+    text-align: center;
+    font-size: larger;
+}
+
+/* Estilos dos campos de input de dados */
+.inputStyle{
+  font-family: 'Otomanopee One', sans-serif;
+  height: 30px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Botão de salvar o form */
+#save{
+    font-family: 'Otomanopee One', sans-serif;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Otomanopee One', sans-serif;
+    border-style: none;
+    background-color: rgb(23, 126, 23);
+    color: white;
+    cursor: pointer;
+}

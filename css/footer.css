@@ -1,0 +1,15 @@
+/* Estilo da barra inferior do site */
+#foot{
+    position: fixed;
+    height: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(255, 174, 0);
+    border: 6px solid black;
+}
+/* Estilo do texto tamanho h3 presente no footer */
+h3{
+    padding-top: -3px;
+}

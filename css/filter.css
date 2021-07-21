@@ -1,0 +1,23 @@
+/* Estilo da div do filtro de heróis */
+.filter {
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: 'Otomanopee One', sans-serif;
+    border: 4px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 174, 0);
+}
+/* Estilo da caixa de texto do filtro */
+.filter input {
+    display: block;
+    width: 70%;
+    height: 30px;
+    padding: 0 5px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Otomanopee One', sans-serif;
+    border-style: none;
+    border-radius: 2px;
+}

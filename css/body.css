@@ -1,0 +1,38 @@
+/* Import da fonte customizada do google */
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/* Aplicando a fonte em todo o body */
+body{
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+/* Estilo da caixa principal */
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo do botao de cadastro */
+#butCad{
+    font-family: 'Otomanopee One', sans-serif;
+    border-style: none;
+    border-radius: 2px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Estilo da caixa onde os dados aparecem */
+#box{
+    background-color: rgb(255, 174, 0);
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: 4px solid black;
+    border-radius: 5px;
+    overflow-x: auto;
+}

@@ -1,0 +1,7 @@
+/* Imports de cada parte de estilo do código, isso me permite importar apenas esse arquivo css que tem todos importados nele */
+@import url("./header.css");
+@import url("./body.css");
+@import url(./filter.css);
+@import url(./table.css);
+@import url("./footer.css");
+@import url("./pop.css");
