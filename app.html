@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Estágio HDN</title>
+    <link type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- import do bootstrap -->
+</head>
+
+<body>
+    <header id="head">
+        <h1 id="tittle">Catálogo de Heróis</h1>
+    </header>
+    <main id="container">
+        <div id="divBut">
+            <button type="button" id="butCad">Cadastre seu Herói</button>
+            <!-- Input do filtro de poderes -->
+            <div class="filter">
+                <input id="fillt" type="text" placeholder="Filtre aqui os heróis por poder" onkeyup="searchHero()">
+            </div>
+        </div>
+        <article id="box">
+            <table id="tableHero" class="rg-table">
+                <!-- Topo da tabela -->
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Primeiro SuperPoder</th>
+                        <th>Segundo SuperPoder</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <!-- Aqui serão inseridos os dados registrados -->
+                <tbody id="tbody">
+                </tbody>
+            </table>
+            <!-- Pop-up de cadastro -->
+            <div id="pop">
+                <header>
+                    <span id="popClose">
+                        <!-- codigo que representa o botao X -->&#10006;
+                    </span>
+                    <h2>Novo Herói</h2>
+                </header>
+                <!-- Formulário c o input de dados -->
+                <form id="F" autocomplete="off">
+                    <input type="text" id="heroName" class="inputStyle" data-index="new" placeholder="Nome do Herói"
+                        required>
+                    <input type="text" id="heroDisc" class="inputStyle" placeholder="Descrição do Herói" required>
+                    <input type="text" id="heroPow1" class="inputStyle" placeholder="Poder 1" required>
+                    <input type="text" id="heroPow2" class="inputStyle" placeholder="Poder 2">
+                </form>
+                <footer>
+                    <button id="save" type="button">Salvar</button>
+                </footer>
+            </div>
+        </article>
+    </main>
+    <!-- Barra inferior -->
+    <footer id="foot">
+        <h3>Esse foi um desafio proposto pelo Programa de Estágios HDN // Data: 07/2021
+        </h3>
+    </footer>
+    <!-- script com todo os sistema -->
+    <script src="./scripts/cadastro.js"></script>
+</body>
+
+</html>
